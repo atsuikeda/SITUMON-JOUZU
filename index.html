@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SITUMON JOUZU</title>
+    <meta
+      name="description"
+      content="質問する内容を整理しよう！
+      解決した内容はテキストファイルとして保存して、再発防止しよう！
+      エラーは資産！"
+    />
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <form name="questionForm" id="id_form">
+      <label id="question_title">質問のタイトル</label>
+      <br />
+      <input
+        type="text"
+        name="title_input"
+        size="30"
+        maxlenglabel="30"
+        value=""
+      />
+      <br />
+
+      <label id="future">実現したいこと</label>
+      <br />
+      <textarea
+        type="text"
+        name="future_input"
+        rows="7"
+        cols="50"
+        value=""
+      ></textarea>
+      <br />
+
+      <label id="situation">現在の状況</label>
+      <br />
+      <textarea
+        type="text"
+        name="situation_input"
+        rows="7"
+        cols="50"
+        value=""
+      ></textarea>
+      <br />
+
+      <label id="result">実現のために試した内容とその結果</label>
+      <br />
+      <textarea
+        type="text"
+        name="result_input"
+        rows="7"
+        cols="50"
+        value=""
+      ></textarea>
+      <br />
+
+      <label id="document">調べた内容や資料</label>
+      <br />
+      <textarea
+        type="text"
+        name="document_input"
+        rows="7"
+        cols="50"
+        value=""
+      ></textarea>
+      <br />
+
+      <button type="button" id="createFileBtn">テキスト生成</button>
+
+      <button type="button" id="copyTextBtn">内容をコピー</button>
+    </form>
+  </body>
+</html>

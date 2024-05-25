@@ -1,0 +1,21 @@
+{
+  "name": "SITUMON JOUZU!!",
+  "description": "質問する内容を整理しよう！解決した内容はテキストファイルとして保存して、再発防止しよう！エラーは資産！",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "action": {},
+  "permissions": ["storage", "tabs"],
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "icons": {
+    "16": "favicon/favicon-16x16.png"
+  }
+}
