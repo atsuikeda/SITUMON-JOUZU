@@ -22,6 +22,8 @@ function createTextFile() {
   link.href = URL.createObjectURL(blob);
   link.setAttribute("download", questionTitle + ".txt");
   link.click();
+
+  document.questionForm.reset();
 }
 function formInputCopy() {
   const formText = formValue();
